@@ -19,9 +19,9 @@ for (var f = 0; f < mat.length; f++) {
 }
 
 matrix.appendChild(getTitle("Recorrida solicitada"));
-for (var f = mat.length-1; f >= 0; f--) {
+for (var c = mat[0].length-1; c >= 0; c--) {
 	var para = document.createElement("p");
-	for (var c = mat[0].length-1; c >= 0; c--) {
+	for (var f = mat.length-1; f >= 0; f--) {
 		para.appendChild(document.createTextNode(mat[f][c] + " | "))
 	}
 	matrix.appendChild(para);
