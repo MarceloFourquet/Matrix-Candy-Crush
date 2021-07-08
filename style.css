@@ -11,5 +11,5 @@
 }
 
 .line{
-    display: inline-block;
+    display: flex;
 }

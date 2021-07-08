@@ -21,9 +21,9 @@ for (var f = 0; f < filas; f++) {
 }
 
 matrix.appendChild(getTitle("Recorrida solicitada"));
-for (var f = filas-1; f >= 0; f--) {
+for (var c = columnas-1; c >= 0; c--) {
 	var divElement = getRow();
-	for (var c = columnas-1; c >= 0; c--) {
+	for (var f = filas-1; f >= 0; f--) {
 		divElement.appendChild(getCell(mat[f][c]))
 	}
 	matrix.appendChild(divElement);
