@@ -1,9 +1,9 @@
 var filas = 9
 var columnas = 9
-var mat = new Array(columnas);
+var mat = new Array(filas);
 var element = 0;
 for (var f = 0; f < filas; f++) {
-	mat[f] = new Array(filas);
+	mat[f] = new Array(columnas);
 	for (var c = 0; c < columnas; c++) {
 		mat[f][c] = element++;
 	}
