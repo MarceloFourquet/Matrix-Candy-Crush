@@ -1,10 +1,11 @@
 var filas = 9
 var columnas = 9
-var mat = new Array(filas);
+var mat = new Array(columnas);
+var element = 0;
 for (var f = 0; f < filas; f++) {
-	mat[f] = new Array(columnas);
+	mat[f] = new Array(filas);
 	for (var c = 0; c < columnas; c++) {
-		mat[f][c] = (c + 1).toString().padStart(2,'0') + "-" + (f + 1).toString().padStart(2,'0');
+		mat[f][c] = element++;
 	}
 }
 
@@ -20,9 +21,9 @@ for (var f = 0; f < filas; f++) {
 }
 
 matrix.appendChild(getTitle("Recorrida solicitada"));
-for (var c = columnas-1; c >= 0; c--) {
+for (var f = filas-1; f >= 0; f--) {
 	var divElement = getRow();
-	for (var f = filas-1; f >= 0; f--) {
+	for (var c = columnas-1; c >= 0; c--) {
 		divElement.appendChild(getCell(mat[f][c]))
 	}
 	matrix.appendChild(divElement);
