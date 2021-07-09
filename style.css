@@ -1,8 +1,29 @@
-#matrix{
-    width: 80%;
-    margin: auto;
-    text-align: center;
+.title{
+    margin-top: 5px;    
+    margin-bottom: 5px;    
 }
+
+.left{
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.right{
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
 .cell{
     width: 50px;
     height: 50px;
@@ -13,9 +34,4 @@
     display:flex;
     justify-content: center;
     align-items: center;
-}
-
-.line{
-    display: flex;
-    justify-content: center;
 }
