@@ -1,3 +1,8 @@
+#matrix{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
 .cell{
     width: 50px;
     height: 50px;
@@ -12,4 +17,5 @@
 
 .line{
     display: flex;
+    justify-content: center;
 }
